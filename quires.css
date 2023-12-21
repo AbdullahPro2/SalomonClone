@@ -1,0 +1,124 @@
+
+/* 814px / 16px = 51rem */
+@media (max-width: 51rem ) {
+    html{
+        /* 8.64px/16 = 0.52 = 52% */
+        font-size: 54%;
+    }
+    .main-header{
+        flex-direction: column;
+    }
+    .left-link-list{
+        flex-direction: column;
+    }
+    #slash{
+        display: none;
+    }
+    .right-link-list{
+        flex-direction: column;
+    }
+    .middle-logo{
+        order: -1;
+        margin-bottom: 0.75rem;
+    }
+    .philosophy-heading{
+        margin-bottom: 7.6rem;
+    }
+    .images{
+        width: 75%;
+        margin: 0 auto;
+    }
+    #view-all{
+        font-size: 1.4rem;
+        padding: 12px 15px;
+
+    }
+    footer{
+       flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+     }
+     .left-text{
+       text-align: center;
+       width: auto;
+       margin-bottom: 1.2rem;
+       font-size: 2.04rem; 
+    }
+    .right-text{
+        font-size: 2.04rem;
+    } 
+    .middle-text{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.2rem;
+        font-size: 2.04rem;
+
+     } 
+     /* *********************************************** */
+     /* Section Profile */
+     .profile-text{
+        font-size: 2.04rem;
+     }
+     .story-text{
+        font-size: 2.04rem;
+
+     }
+}
+
+/* 576px / 16px = 36rem */
+@media (max-width: 36rem) {
+    html{
+        font-size: 62.5%;
+    }
+    .philosophy-heading{
+        margin-bottom: 3.6rem;
+        font-weight: 100;
+    }
+    .philosophy-text {
+        margin: 0 auto;
+        width: 100%;
+        padding: 2.4rem 4.6rem;
+        line-height: 1.4;
+        margin-bottom: 7.6rem;
+
+    }
+    .images{
+        grid-template-columns: 1fr;
+        width: 90%;
+     }
+     #view-all{
+        font-size: 1.76rem;
+        padding: 15px 18px;
+    }
+    /* Section: Contact-Us */
+    .contact-details{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-gap: 2rem;
+        padding: 0 2.4rem;
+  }
+   /* *********************************************** */
+     /* Section Profile */
+     .profile-text{
+        font-size: 1.76rem;
+        padding: 0 3.2rem;
+        width: 100%;
+     }
+     .story-text{
+        font-size: 1.76rem;
+        padding: 0 3.2rem;
+        width: 100%;
+     }
+     .our-story-imgs{
+        grid-template-columns: 1fr;
+        padding: 0 3.2rem;
+     }
+     .indivdual-leaders {
+        grid-template-columns: 1fr;
+        padding: 0 3.2rem;
+     }
+     /* Footer */
+     .right-text {
+       width: auto;
+     }
+}

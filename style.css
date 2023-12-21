@@ -1,0 +1,459 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* Main header  */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  margin-bottom: 1rem;
+}
+.left-link-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.middle-logo img {
+  width: 200px;
+  height: 38px;
+  margin-right: 3rem;
+}
+.right-link-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.list-item a {
+  color: #212529;
+  display: inline-block;
+  font-size: 1.5rem;
+  letter-spacing: 0.3em;
+  padding: 0.5rem 1.6rem;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* section: video  */
+.video {
+  background-color: #e3e8eece;
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 45.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cta {
+  color: #212529;
+  font-weight: bold;
+  height: 28px;
+  letter-spacing: 0.25rem;
+  text-transform: lowercase;
+  transform: rotate(90deg) translateY(100%);
+  width: 100px;
+  position: absolute;
+  top: 70%;
+  right: -40px;
+}
+
+/* section Philosophy */
+.philosophy {
+  margin-bottom: 6rem;
+}
+.text {
+  /* border: 2px solid red; */
+  margin-bottom: 6rem;
+}
+.philosophy-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.philosophy-heading:after {
+  border-bottom: 3px solid #3990c3;
+  content: "";
+  display: block;
+  margin: 2rem auto;
+  width: 5rem;
+}
+.philosophy-text {
+  /* border: 2px solid red; */
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.76rem;
+}
+/* grid */
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 6rem;
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+#view-all {
+  border: 3px solid #3990c3;
+  margin: 4rem 0;
+  padding: 15px 18px;
+  cursor: pointer;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 1.76rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  background-color: transparent;
+}
+#view-all:hover {
+  background-color: #3990c3;
+  color: white;
+}
+
+/* footers */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  font-size: 1.7rem;
+}
+.left-text {
+  width: 25%;
+}
+.social-links i {
+  color: #3990c3;
+}
+.right-text {
+  width: 25%;
+  display: flex;
+  justify-content: end;
+}
+.right-text strong{
+  border-radius: 10px;
+  background-color: #333;
+  color: whitesmoke;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+/* button methods */
+.disable {
+  display: none;
+}
+
+/* Contact Us Page */
+.title-img {
+  margin-bottom: 20rem;
+  position: relative;
+}
+.title-pic {
+  height: 85vh;
+  width: 100%;
+  object-fit: cover;
+}
+.scroll {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+.scroll i {
+  cursor: pointer;
+  margin-left: 3.8rem;
+}
+
+/* section: Contact-Us */
+.contact {
+  margin-bottom: 10rem;
+}
+.contact-us {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.52rem;
+  letter-spacing: 1rem;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+.contact-us::after {
+  border-bottom: 3px solid #3990c3;
+  content: "";
+  display: block;
+  margin: 2rem auto;
+  width: 5rem;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 0 2.4rem;
+}
+.h6 {
+  font-size: 1.76rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.para {
+  font-size: 1.76rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 1.74rem;
+  font-weight: normal;
+  font-family: "Cormorant Garamond", serif;
+  padding: 0 1rem;
+}
+.about-us a {
+  display: block;
+  font-size: 1.76rem;
+  margin-bottom: 0.3rem;
+  color: #3990c3;
+}
+.about-us a:nth-child(7) {
+  margin-bottom: 1.8rem;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 1.5px solid rgba(0, 0, 0, 0.165);
+  padding: 0.8rem;
+}
+label {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+}
+.send-message {
+  border: 0px;
+  margin: 4rem 0;
+  padding: 15px 18px;
+  cursor: pointer;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 1.76rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  background-color: transparent;
+  width: 100%;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+}
+.send-message:hover {
+  background-color: #23272b;
+  border-color: #1d2124;
+  color: #fff;
+}
+
+/* Profile-Section */
+
+/* 1) profile-title-img section */
+.profile-title-img {
+  margin-bottom: 12rem;
+  position: relative;
+}
+.profile-title-img .scroll,
+.profile-title-img .scroll i {
+  color: white;
+  position: absolute;
+}
+/* 2) main profile section */
+.profile {
+  margin-bottom: 12rem;
+}
+.profile-heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.52rem;
+  letter-spacing: 1rem;
+  font-weight: 500;
+  margin-bottom: 10rem;
+}
+.profile-heading::after {
+  border-bottom: 3px solid #3990c3;
+  content: "";
+  display: block;
+  margin: 2rem auto;
+  width: 5rem;
+}
+.profile-text {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.76rem;
+  line-height: 1.5;
+  margin-bottom: 10rem;
+}
+.profile-img {
+  padding: 0 4rem;
+}
+
+/* Out Story Section */
+.our-story {
+  margin-bottom: 12rem;
+}
+.story-heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.52rem;
+  letter-spacing: 1rem;
+  font-weight: 500;
+  margin-bottom: 6rem;
+}
+.story-heading::after {
+  border-bottom: 3px solid #3990c3;
+  content: "";
+  display: block;
+  margin: 2rem auto;
+  width: 5rem;
+}
+.story-text {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.76rem;
+  line-height: 1.5;
+  margin-bottom: 10rem;
+}
+.our-story-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.4rem;
+  padding: 0 1.2rem;
+}
+
+/* Section Leaders */
+.leaders{
+  margin-bottom: 12rem;
+}
+.indivdual-leaders {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.4rem;
+  padding: 0 1.2rem;
+}
+.leader-box img {
+  margin-bottom: 3.2rem;
+}
+.leader-name {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  font-weight: 100;
+}
+.job-title {
+  text-align: center;
+  font-size: 1.76rem;
+  line-height: 1.5;
+  margin-bottom: 4.2rem;
+  color: #3990c3;
+}
+
+/* residences Page */
+header .residences{
+  margin-bottom: 12rem;
+}
+.residences .images {
+  padding: 0 3rem;
+}
+#img-2{
+cursor: pointer;
+position: relative;
+}
+.overlay{
+  transition: opacity 2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  background-color: rgba(0, 0, 0, 0.711);
+  width: 90%;
+  height: 90%;
+  opacity: 0; /* Set initial opacity to 0 */
+  visibility: hidden; /* Hide the element without affecting layout */
+}
+.overlay-link{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.overlay-heading{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 1rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+.overlay-paragraph {
+  font-size: 1.76rem;
+}
+
+#img-14 a:hover {
+  font-size: 5rem;
+  background-color: red;
+  transition: all 10s;
+
+}
