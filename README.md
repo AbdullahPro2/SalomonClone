@@ -1,6 +1,6 @@
 # Thorson Clone Website
 
-Welcome to the Thorson Clone website, a project inspired by the original Thorson website. This clone is built with Html , vanilla css & javascript, , aiming to replicate the functionality and design of Thorson.
+Welcome to the Thorson Clone website, a project inspired by the original Thorson website. This clone is built with Html , vanilla css & javascript, aiming to replicate the functionality and design of Thorson.
 
 ## Getting Started
 
